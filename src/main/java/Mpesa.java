@@ -1,10 +1,10 @@
 
 import okhttp3.*;
+
 import org.json.*;
 
 import java.io.IOException;
 import java.util.Base64;
-import java.util.Scanner;
 
 public class Mpesa {
 	String appKey;

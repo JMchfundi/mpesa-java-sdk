@@ -12,13 +12,15 @@ import java.util.Scanner;
 public class JMpesaSdkTest {
 
 
+	private static Scanner scannerObj;
+
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		Scanner scannerObj = new Scanner(System.in);
+		scannerObj = new Scanner(System.in);
 		Mpesa m=new Mpesa("yxte0IOE65IDISdYA1OzGtC02UXlSdqW","Cp5jQNa6UcWP7zqM");
 		//m.authenticate();
 
@@ -32,7 +34,7 @@ public class JMpesaSdkTest {
 		 */
 
 		System.out.println("Give Phone Number In Format :254707699700");
-		
+
 		try {
 			m.STKPushSimulation("174379", JPasswordTimestamp.pwdGenerator("174379", "bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919"),
 					JPasswordTimestamp.timestampGenerator(),"CustomerPayBillOnline","1", scannerObj.nextLine(),"600142","174379","http://90142406.ngrok.io/JCallbackUrl/mpesaCbUrl",
