@@ -10,8 +10,7 @@ import java.util.Scanner;
  * @author Akida M Jafari
  *
  */
-public class JMpesaSdkTest {
-
+public class JSTKPush {
 
 	private static Scanner scannerObj;
 
